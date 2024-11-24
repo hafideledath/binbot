@@ -23,7 +23,7 @@ export const sections: SectionData[] = [
   {
     id: 'solution',
     title: 'Our Solution',
-    content: "Our solution is Bingenius, a comprehensive waste management system combining smart bins, data analytics, and student engagement. The following diagram and slides provide more information."
+    content: "Our solution is BinBot, a comprehensive waste management system combining smart bins, data analytics, and student engagement. The following diagram and slides provide more information."
   },
   {
     id: 'implementation',
