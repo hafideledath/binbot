@@ -97,18 +97,22 @@ const SectionContainer = styled.section`
 const StoryContent = styled(motion.div)`
   max-width: 800px;
   margin: 0 auto;
-  text-align: left;
+  text-align: center;
   padding: 0 1rem;
 
   @media (max-width: 768px) {
     padding: 0;
+  }
+
+  &#sources {
+    text-align: left;
   }
 `;
 
 const StoryTitle = styled.h2`
   font-size: 2em;
   margin-bottom: 1em;
-  text-align: left;
+  text-align: center;
 
   @media (max-width: 768px) {
     font-size: 1.5em;
@@ -121,7 +125,10 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1.1em;
     line-height: 1.6;
     margin-bottom: 1.5em;
-    text-align: left;
+
+    #sources & {
+      text-align: left;
+    }
 
     @media (max-width: 768px) {
       font-size: 1em;
@@ -180,6 +187,7 @@ const Section: React.FC<SectionProps> = ({ id, title, content }) => {
       <SectionContainer className="story-section" id={id}>
         <StoryContent 
           className="story-content"
+          id={id}
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
