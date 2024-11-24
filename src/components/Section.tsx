@@ -200,7 +200,7 @@ const Section: React.FC<SectionProps> = ({ id, title, content }) => {
           {id === 'solution' && (
             <PrototypeContainer>
               <motion.img
-                src="/Prototype.svg"
+                src="/prototype.svg"
                 alt="Smart Bin Prototype Design"
                 style={{ 
                   width: '100%',
