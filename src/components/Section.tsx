@@ -29,8 +29,10 @@ const InfoBox = styled(motion.div)`
   border: 2px solid #ccccccbb;
   border-radius: 8px;
   padding: 0.75rem;
-  width: 100px;
+  width: 120px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 0.9rem;
+  line-height: 1.4;
 
   &::before {
     content: '';
@@ -51,7 +53,7 @@ const InfoBox = styled(motion.div)`
 
   @media (max-width: 768px) {
     font-size: 0.8rem;
-    padding: 0.3rem 0.8rem;
+    padding: 0.5rem;
   }
 `;
 
